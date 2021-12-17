@@ -1,0 +1,74 @@
+<!--
+Assignment: Homework5 - Scrabble
+Name: Alvin Tran
+Contact Information: Alvin_Tran@student.uml.edu
+Date: 12/16/2021
+Resources Used:
+    https://api.jquery.com/
+    https://jqueryui.com/
+Note: Incomplete
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> One-Line Scrabble </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">  <!-- To use jQuery ui, need to link css also-->
+    </head>
+    <body>
+        <header>
+            <h1>One-Line Scrabble!</h1>
+        </header>
+
+        <p id="Score">Score: 0</p>
+        <p id="Word">Word: </p>
+
+        <button type="button" id="submitWord">Submit Word</button>
+        <button type="button" id="restartGame">Restart Game</button>
+        
+        <!--
+        My lineContainer is the board which the tiles will be dropped on. The board has 15 positions
+        so I created 15 different div's for each position. Each position is a droppable location.
+        -->
+        <div id="lineContainer">
+            <div id="droppable" class="ui-widget">
+                <div id="Position1"></div>
+                <div id="Position2"></div>
+                <div id="Position3"></div>
+                <div id="Position4"></div>
+                <div id="Position5"></div>
+                <div id="Position6"></div>
+                <div id="Position7"></div>
+                <div id="Position8"></div>
+                <div id="Position9"></div>
+                <div id="Position10"></div>
+                <div id="Position11"></div>
+                <div id="Position12"></div>
+                <div id="Position13"></div>
+                <div id="Position14"></div>
+                <div id="Position15"></div>
+            </div>
+        </div>
+
+        <!--
+        My tileContainer is the tile rack which is where the 7 tiles the user uses to create a word
+        is placed. The tileContainer is a droppable location.
+        In the tileContainer is the tilePlaceHolders which will hold the draggable tiles.
+        -->
+        <div id="tileContainer">
+            <div id="draggable" class="ui-widget">
+                <div id="tilePlaceHolders"></div>
+            </div>
+        </div>
+
+        <!-- jquery cdn hotlinks -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  <!-- brings in jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>  <!-- brings in jquery validation plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.js"></script>  <!-- brings in jquery validation plugin, more methods -->
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>  <!-- brings in jquery user interface -->
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

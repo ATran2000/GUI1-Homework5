@@ -1,0 +1,185 @@
+/*
+Assignment: Homework5 - Scrabble
+Name: Alvin Tran
+Contact Information: Alvin_Tran@student.uml.edu
+Date: 12/16/2021
+Resources Used:
+    https://api.jquery.com/
+    https://jqueryui.com/
+Note: Incomplete
+*/
+
+body {
+    display: block;
+    background-color: lightblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: auto;
+    margin: 0px auto 0px auto;
+    text-align: center;
+}
+
+div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    margin: 0px auto 0px auto;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#lineContainer {
+    background-image: url(../images/OneLine.jpg);
+    /* I used the exact size of the one board line image by checking the image file */
+    width: 1129px;
+    height: 80px;
+}
+
+#tileContainer {
+    background-image: url(../images/Tile_Rack.jpg);
+    /* I used the exact size of the tile rack image by checking the image file */
+    width: 640px;
+    height: 182px;
+    margin-top: 10px;
+}
+
+#tilePlaceHolders {
+    padding-top: 65px;
+}
+
+/*
+This will only affect the size of the tiles. The tile sizes are smaller than the
+one board line positions.
+*/
+img {
+    height: 63px;
+    width: 63px;
+    margin: 0px 1px 0px 1px;
+}
+
+/*
+For the 15 positions, I tried to have them correspond to the 15 positions on the
+one board line as closely as possible.
+*/
+#Position1 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 64px;
+}
+
+#Position2 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 69px;
+}
+
+#Position3 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 67px;
+}
+
+#Position4 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 67px;
+}
+
+#Position5 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 65px;
+}
+
+#Position6 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 68px;
+}
+
+#Position7 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 64px;
+}
+
+#Position8 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 68px;
+}
+
+#Position9 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 66px;
+}
+
+#Position10 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 67px;
+}
+
+#Position11 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 67px;
+}
+
+#Position12 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 69px;
+}
+
+#Position13 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 67px;
+}
+
+#Position14 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 68px;
+}
+
+#Position15 {
+    float: left;
+    margin-top: 7px;
+    margin-left: 6px;
+    height: 65px;
+    width: 66px;
+}
